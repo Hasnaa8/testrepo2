@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+{% for x in pro %}
+<p>{{x}} {{x.price}}</p>
+<img src="{{x.image.url}}" alt="">
+{% endfor %}
+
+{% endblock content %}
